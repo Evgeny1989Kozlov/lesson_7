@@ -1,0 +1,667 @@
+/* ! Подключение шрифтов */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap");
+
+@font-face {
+   font-family: "Helvetica Neue";
+   src: url("../fonts/HelveticaNeue-CondensedBlack.woff2") format("woff2"),
+      url("../fonts/HelveticaNeue-CondensedBlack.woff") format("woff");
+   font-weight: 900;
+   font-style: normal;
+   font-display: swap;
+}
+
+@font-face {
+   font-family: "Helvetica Neue";
+   src: url("../fonts/HelveticaNeue.woff2") format("woff2"), url("../fonts/HelveticaNeue.woff") format("woff");
+   font-weight: normal;
+   font-style: normal;
+   font-display: swap;
+}
+
+@font-face {
+   font-family: "HelveticaNeueCyr";
+   src: url("HelveticaNeueCyr-Bold.woff2") format("woff2"), url("HelveticaNeueCyr-Bold.woff") format("woff");
+   font-weight: bold;
+   font-style: normal;
+   font-display: swap;
+}
+
+/* ОБНУЛЕНИЕ СТИЛЕЙ */
+*,
+*::before,
+*::after {
+   margin: 0;
+   padding: 0;
+   border: 0;
+   box-sizing: border-box;
+}
+li {
+   list-style: none;
+}
+a,
+a:visited {
+   text-decoration: none;
+}
+a:hover {
+   text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+   font-weight: inherit;
+   font-size: inherit;
+}
+img {
+   vertical-align: top;
+}
+html,
+body {
+   height: 100%;
+}
+html {
+   font-size: 16px; /* по умолчанию */
+}
+body {
+   line-height: 1;
+   font-family: "Cormorant Garamond", serif;
+   font-weight: 600;
+   height: 100%;
+}
+.wrapper {
+   min-height: 100%;
+   overflow: hidden;
+}
+
+.cont {
+   max-width: 1000px;
+   margin: 0 auto;
+   padding: 10px;
+}
+
+/* *общие классы */
+
+h1 {
+   font-size: 72px;
+   color: rgba(14, 89, 151, 0.733);
+   text-shadow: 3px -5px 10px rgb(154, 43, 182);
+   margin-bottom: 20px;
+}
+
+h2 {
+   font-size: 50px;
+   color: rgba(77, 233, 199, 0.623);
+   max-width: 240px;
+   box-shadow: 6px 9px 4px rgba(52, 153, 221, 0.651);
+   margin-bottom: 25px;
+   border-radius: 86% 14% 99% 1% / 10% 67% 33% 90%;
+}
+.spspi h2 {
+   box-shadow: 6px 9px 4px rgb(148, 221, 52);
+   padding: 10px 10px 20px;
+   background: rgba(136, 102, 68, 0.377);
+}
+h2.nadhealth {
+   color: rgb(85, 136, 133);
+   text-transform: capitalize;
+   background: linear-gradient(
+      45deg,
+      rgba(0, 0, 0, 0.65) 0%,
+      rgba(0, 0, 0, 0.65) 2%,
+      rgba(0, 0, 0, 0.65) 5%,
+      rgba(0, 0, 0, 0) 58%,
+      rgba(0, 0, 0, 0) 100%
+   );
+   display: inline-block;
+   box-shadow: none;
+}
+h2.nadhealth span {
+   background: none;
+}
+
+h2 span {
+   display: inline-block;
+   color: indianred;
+   background: radial-gradient(
+      ellipse at center,
+      rgba(245, 246, 246, 1) 0%,
+      rgba(219, 220, 226, 1) 21%,
+      rgba(184, 186, 198, 1) 49%,
+      rgba(221, 223, 227, 1) 80%,
+      rgba(245, 246, 246, 1) 100%
+   );
+   border-radius: 20px;
+}
+
+h2.cenblock {
+   text-align: left;
+   font-size: 16px;
+   font-family: "Caveat", cursive;
+   margin-bottom: 12px;
+}
+
+ul {
+   font-family: "Caveat", cursive;
+   font-weight: 400;
+}
+
+.ma {
+   margin-bottom: 40px;
+}
+
+/* !----------eeexp----------- */
+
+.eexp {
+   background: khaki;
+   padding: 50px;
+}
+
+.bl1 {
+   background: lawngreen;
+   padding: 10%;
+}
+
+.bl2 {
+   background: rgb(211, 211, 211);
+   padding: 5%;
+   margin-bottom: 5px;
+   /* opacity: 0.2; */
+   border-radius: 0% 100% 100% 0% / 62% 36% 64% 38%;
+   outline: 10px lime;
+   overflow: auto;
+}
+
+.bl3 {
+   /* margin-top: -90px; */
+   background: rgb(129, 52, 139);
+   padding: 2.5%;
+   line-height: 200%;
+   outline: 10px solid #864;
+   border: 10px solid rgb(224, 116, 7);
+}
+
+.spspa {
+   border-top: 5px solid #885;
+   line-height: 300%;
+   text-decoration: line-through;
+}
+
+.bl3:hover {
+   outline: none;
+   border: 1px solid transparent;
+   padding: 9px;
+}
+
+/* !------------------eeeoe --------------------*/
+
+.eeeoe {
+   padding: 130px 30px 1px 30px;
+   background: url("../img/ico2.png") 90% 20px repeat-y, url("../img/ico2.png") 200px 20px repeat-x,
+      url("../img/ico2.png") 200px 90% repeat-x, #987 url("../img/ico2.png") 10% 20px repeat-y;
+   margin-bottom: 155px;
+   border: 10px solid #754;
+   max-width: 900px;
+}
+
+.eeeoe .b1 {
+   padding: 130px;
+   background: #1e1553 url("../img/notico2.png") 50% / cover no-repeat;
+   margin-bottom: 30px;
+}
+
+.eeeoe .b2 {
+   padding: 60px;
+   background: url("../img/ico7.png") 5px 10px no-repeat, url("../img/ico8.png") 5px 95% no-repeat,
+      url("../img/ico9.png") 98% 10px no-repeat, #864 url("../img/ico10.png") 98% 95% no-repeat;
+
+   /* margin-top: -300px; */
+}
+
+.eeeoe .b3 {
+   padding: 45px;
+   background: radial-gradient(
+      ellipse at center,
+      rgba(236, 232, 157, 1) 0%,
+      rgba(94, 83, 115, 1) 50%,
+      rgba(24, 181, 164, 1) 100%
+   );
+}
+.tys img {
+   margin-bottom: -130px;
+}
+
+.spisok ul {
+   background: url(../img/ico2.png) repeat-y;
+   padding: 25px;
+   margin-bottom: 25px;
+}
+.spisok ul li {
+   margin-bottom: 45px;
+   background: url("../img/ico3.png") no-repeat;
+   padding: 20px 0px 0px 45px;
+   min-height: 48px;
+}
+
+.spisok2 {
+   margin-top: -445px;
+}
+.spisok2 ul {
+   background: url(../img/ico8.png) 20% 0px repeat-y;
+   padding: 55px;
+   margin-bottom: 25px;
+}
+.spisok2 ul li {
+   margin-bottom: 45px;
+   background: url("../img/ico10.png") no-repeat;
+   padding: 20px 0px 0px 45px;
+   min-height: 48px;
+}
+
+.wwwwoi {
+   /* padding: 10px 10px 100px 10px; */
+   background: rgb(0, 202, 17);
+
+   margin-bottom: 150px;
+}
+
+/* !---------------backgronemore------------------ */
+
+.back_cont > div {
+   margin-bottom: 50px;
+}
+.backgronemore {
+   background: url("../img/bg1.jpg") right 50% / cover;
+   padding: 2%;
+}
+
+.backgronemoremo {
+   background: url("../img/notico2.png") right 50% / contain no-repeat,
+      url("../img/notico2.png") left 50% / contain no-repeat, url("../img/bg4.jpeg") 50% / cover no-repeat;
+   padding: 2%;
+}
+
+.backgronemoremo2 {
+   background: url("../img/notico4.png") center 90% / cover no-repeat;
+   padding: 2%;
+}
+
+.backgronemoremo3 {
+   background: url("../img/bg1.jpg") 0px 0px / 30% no-repeat, url("../img/bg3.jpg") 40% 10% / 30% no-repeat,
+      url("../img/bg5.jpg") 80% 25% / 80% no-repeat;
+   padding: 2%;
+}
+
+.backgronemoremo4 {
+   padding: 2%;
+
+   background: rgb(128, 0, 6)
+      linear-gradient(
+         135deg,
+         rgba(208, 228, 247, 0.38) 0%,
+         rgba(208, 228, 247, 0.62) 39%,
+         rgba(208, 228, 247, 0.72) 55%,
+         rgba(135, 188, 234, 1) 100%
+      );
+}
+
+.backgronemoremo5 {
+   padding: 100px 10px;
+   background: url("../img/bg3.jpg");
+   background-attachment: fixed;
+}
+
+.spspi {
+   margin-top: 20px;
+}
+.spspi ul li {
+   margin: 0px 0px 15px 0px;
+   font-size: 12px;
+   min-height: 30px;
+   background: url("../img/iconnn.png") right 0 / 30px no-repeat;
+   padding: 7px 50px 0px 30px;
+}
+
+/* ! -----------------contact------------------ */
+
+.contact {
+   max-width: 237px;
+   font-size: 14px;
+   font-weight: 400;
+   line-height: 142%;
+}
+
+.contact .cottext {
+   font-weight: 700;
+   line-height: 157%;
+   margin-bottom: 28px;
+}
+
+.contact .spis_cont ul li {
+   margin-bottom: 16px;
+   padding: 0px 0px 0px 35px;
+}
+
+.contact .spis_cont ul li.first {
+   background: url(../img/ic1.png) 3.5px 4.2px no-repeat;
+}
+.contact .spis_cont ul li.second {
+   background: url(../img/ic2.png) 0 1.2px no-repeat;
+}
+.contact .spis_cont ul li.third {
+   background: url(../img/ic3.png) 0 1.2px no-repeat;
+}
+.contact .spis_cont ul li.fourth {
+   background: url(../img/ic4.png) 0 1.2px no-repeat;
+}
+
+/* ! ----------------Bgpart---------------- */
+
+.bgpart {
+   background: url("../img/bg_car.png") 0 0 / cover no-repeat;
+}
+
+.bgpart .body {
+   max-width: 750px;
+   padding: 280px 15px 312px 5px;
+   color: #fff;
+}
+
+.bgpart .bgcont {
+   margin-bottom: 270px;
+}
+
+.bgpart .body .title {
+   font-weight: 900;
+   font-size: 56px;
+   text-transform: uppercase;
+   margin-bottom: 48px;
+}
+
+.bgpart .body .button a {
+   display: inline-block;
+   font-weight: 700;
+   font-size: 12px;
+   text-transform: uppercase;
+   line-height: 200%;
+   color: #fff;
+   padding: 10px 50px 10px 20px;
+   background: url("../img/strelforbut.png") right no-repeat, url("../img/foforbut.png");
+}
+
+/* !---------------customers----------------------- */
+
+.customers {
+   background: url("../img/BGpers.png");
+   padding: 80px 0px;
+   margin-bottom: -90px;
+}
+
+.customers .col2,
+.customers .col3 {
+   background: #fff;
+   padding: 50px 44px 40px;
+}
+
+.customers .col1 {
+   margin-right: 10px;
+   vertical-align: top;
+}
+
+.customers .col2 {
+   margin-right: 20px;
+}
+
+.bodyper {
+   font-size: 16px;
+   line-height: 24px;
+   letter-spacing: 0.15px;
+   font-weight: 400;
+}
+
+.oll .bodyper .txt {
+   margin-bottom: 36px;
+}
+.oll .bodyper .person {
+   font-weight: 700;
+}
+
+.col2 .bodyper .person {
+   padding: 14px 0px 0px 65px;
+   background: url("../img/pers1.png") 0 0 no-repeat;
+   min-height: 48px;
+}
+
+.col3 .bodyper .person {
+   padding: 14px 0px 0px 65px;
+   background: url("../img/pers2.png") 0 0 no-repeat;
+   min-height: 48px;
+}
+.customers .customers_cont .bodytxt {
+   max-width: 325px;
+}
+
+.customers .customers_cont .oll {
+   display: inline-block;
+   max-width: 32%;
+}
+
+.customers .title {
+   font-family: Roboto;
+   font-weight: 900;
+   font-size: 36px;
+   line-height: 42px;
+   color: #000;
+}
+
+/* ! ----------------extra-------------------- */
+
+.extraaa {
+   background: url("../img/extraBG.png") 0 0 / cover no-repeat;
+   margin-bottom: 80px;
+}
+
+.imicont .imi {
+   text-align: right;
+   margin-bottom: -250px;
+}
+.extrapart_body {
+   padding: 95px 0px 200px 0px;
+}
+.bodytxt {
+   max-width: 430px;
+   margin-bottom: 80px;
+}
+.bodytxt .txt {
+   font-weight: 700;
+   font-size: 12px;
+   line-height: 200%;
+   letter-spacing: 2.5px;
+   text-transform: uppercase;
+   margin-bottom: 32px;
+   color: #d5d5d5;
+   background: url("../img/iconnn.png") 0 0 no-repeat;
+   padding: 2px 0px 0px 37px;
+}
+
+.bodytxt .body_col4 .col1 .ttxxtt {
+   font-size: 16px;
+   line-height: 24px;
+   letter-spacing: 0.15px;
+   color: #fff;
+}
+.extraaa .title {
+   font-family: Roboto;
+   font-weight: 900;
+   font-size: 36px;
+   line-height: 42px;
+   color: #fff;
+}
+
+.extraaa .body_col4 .title {
+   font-family: Roboto;
+   font-weight: 900;
+   font-size: 36px;
+   line-height: 42px;
+   color: #c40b0b;
+   margin-bottom: 4px;
+}
+
+.col1 {
+   background: url("../img/exico1.png") 0 0 no-repeat;
+}
+.col2 {
+   background: url("../img/exico2.png") 0 0 no-repeat;
+}
+.col3 {
+   background: url("../img/exico3.png") 0 0 no-repeat;
+}
+.col4 {
+   background: url("../img/exico4.png") 0 0 no-repeat;
+}
+.coll {
+   display: inline-block;
+   max-width: 25%;
+   padding: 0px 0px 0px 90px;
+   min-height: 76px;
+   margin-right: 24px;
+}
+
+.coll .yes {
+   font-size: 16px;
+   line-height: 24px;
+   letter-spacing: 0.15px;
+   color: #fff;
+}
+
+.coll .yees {
+   font-size: 16px;
+   line-height: 24px;
+   letter-spacing: 0.15px;
+   color: #fff;
+}
+
+/* !-----------------Healthyfood---------------- */
+.healtfood {
+   background: url("../img/healthBG.png") 0 0 / cover;
+   font-family: "Helvetica Neue";
+}
+
+.coco {
+   max-width: 1110px;
+   margin: 0 auto;
+}
+.header .header_cont {
+   color: #fff;
+   padding: 47px 0px 35px;
+}
+
+.LLogo {
+   display: inline-block;
+   width: 49%;
+}
+.logo {
+   color: green;
+   font-size: 20px;
+   background: url("../img/LogoHealth.png") 0 0 no-repeat;
+   padding: 5px 0px 0px 34px;
+   min-height: 24px;
+}
+.nav {
+   display: inline-block;
+   width: 48%;
+   text-align: right;
+   margin-right: 20px;
+}
+.nav ul li {
+   display: inline-block;
+   margin-right: 40px;
+   color: inherit;
+}
+
+.nav ul li a {
+   display: inline-block;
+   color: #fff;
+   text-transform: capitalize;
+   font-size: 14px;
+}
+.nav ul li.last {
+   margin-right: 0px;
+}
+.body {
+   padding: 80px 100px 161px 121px;
+}
+.healtfood .title {
+   max-width: 700px;
+   margin: 0 auto;
+   font-size: 72px;
+   line-height: 84.5px;
+   margin-bottom: 16px;
+   color: #fff;
+   text-align: center;
+   font-weight: 900;
+}
+
+.healtfood .title span {
+   font-weight: 400;
+}
+
+.healtfood .txt {
+   line-height: 150%;
+   color: #ffffff50;
+   max-width: 500px;
+   margin: 0 auto 45px;
+   text-align: center;
+}
+
+.button {
+   margin-bottom: 80px;
+   text-align: center;
+}
+.button a {
+   font-size: 18px;
+   line-height: 122%;
+   padding: 28px 57px;
+   background: green;
+   border-radius: 29px;
+   color: #000;
+   font-weight: 700;
+}
+.threecol {
+   color: #fff;
+   line-height: 200%;
+   text-align: center;
+}
+.fff {
+   display: inline-block;
+   width: 30%;
+   background: url("../img/healthico2.png") 55% 0px no-repeat;
+   padding: 30px 0px 0px 30px;
+   text-align: center;
+}
+
+.sss {
+   display: inline-block;
+   width: 30%;
+   background: url("../img/helthico1.png") 55% 0px no-repeat;
+   padding: 30px 0px 0px 30px;
+   text-align: center;
+}
+
+.ttth {
+   display: inline-block;
+   width: 30%;
+   background: url("../img/helthico1.png") 55% 0px no-repeat;
+   padding: 30px 0px 0px 30px;
+   text-align: center;
+}
+.sss a,
+.ttth a {
+   color: inherit;
+}
+
+.xtt2 {
+   font-size: 14px;
+   color: #ffffff50;
+}
